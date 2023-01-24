@@ -1,0 +1,9 @@
+@each $color in  blue, red, yellow, purple, cadetblue {
+    .#{$color}-text { color: $color; }
+}
+
+@for $i from 1 through 5 {
+    .text-#{$i} {
+        font-size: 20px * $i;
+    }
+}
